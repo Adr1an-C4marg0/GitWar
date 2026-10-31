@@ -1,0 +1,6 @@
+{
+  "name": "GitClash 16-bit",
+  "description": "Arena gamificada de projetos e contribuições do GitHub com batalhas head-to-head, strikes, ranking dinâmico e alertas sonoros de ultrapassagem.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

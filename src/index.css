@@ -1,0 +1,60 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Nunito', 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #090d16;
+    color: #f1f5f9;
+  }
+}
+
+/* Minimalist Clean Gamified Button */
+.btn-primary {
+  background-color: #22c55e;
+  border-bottom: 3px solid #15803d;
+  color: #052e16;
+  font-weight: 800;
+  transition: all 0.15s ease;
+}
+.btn-primary:hover:not(:disabled) {
+  background-color: #4ade80;
+}
+.btn-primary:active:not(:disabled) {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+}
+
+.btn-secondary {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-bottom: 3px solid #0f172a;
+  color: #f1f5f9;
+  font-weight: 700;
+  transition: all 0.15s ease;
+}
+.btn-secondary:hover:not(:disabled) {
+  background-color: #273549;
+}
+.btn-secondary:active:not(:disabled) {
+  transform: translateY(2px);
+  border-bottom-width: 1px;
+}
+
+/* Clean Airy Cards */
+.clean-card {
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 1.25rem;
+}
+
+.clean-card-hover {
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+.clean-card-hover:hover {
+  border-color: #334155;
+}
